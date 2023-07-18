@@ -10,17 +10,18 @@
 
 <body>
 	<header>
-		<nav>
+		<nav class="main-nav">
 			<a href="index.html">Strona główna</a>
 			<a href="nauka-html.html">Znaczniki HTML</a>
+			<a href="nauka-css.html">Nauka CSS</a>
 		</nav>
 	</header>
-	<main>
+	<main class="main-content">
 		<header id="top">
 			<h1>Praca domowa z M02</h1>
 		</header>
 		<section>
-			<h2>Kim jestem</h2>
+			<h2 class="header-2">Kim jestem</h2>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet leo nisl. Cras tempus sapien vel
 				malesuada gravida. <a href="https://www.google.pl" target="_blank">Maecenas condimentum</a> accumsan
@@ -39,7 +40,7 @@
 			</p>
 		</section>
 		<section>
-			<h2>Po co robię to szkolenie?</h2>
+			<h2 class="header-2">Po co robię to szkolenie?</h2>
 			<article>
 				<h3>Co będzie jak skończę to szkolenie?</h3>
 				<p>
@@ -53,7 +54,7 @@
 				</p>
 			</article>
 			<article>
-				<h3>Czy to nie powinno być w strukturze jako dziecko "section" z h2?</h3>
+				<h3 class="header-2">Czy to nie powinno być w strukturze jako dziecko "section" z h2?</h3>
 				<img src="Lock_icon.png" alt="kłódka" height="80px">
 				<p>
 					Donec tempus iaculis bibendum. Nulla id sapien metus. Cras consequat, purus quis luctus aliquet,
@@ -66,7 +67,7 @@
 				</p>
 			</article>
 			<article id="gitHub">
-				<h3>Dopisałem to, żeby zobaczyć jak odnotuje to GitHub</h3>
+				<h3 class="header-3">Dopisałem to, żeby zobaczyć jak odnotuje to GitHub</h3>
 				<p>
 					Donec tempus iaculis bibendum. Nulla id sapien metus. Cras consequat, purus quis luctus aliquet,
 					dolor augue
@@ -78,7 +79,7 @@
 				</p>
 			</article>
 			<article>
-				<h3>Kolejne artykuły, żeby wydłużyć stronę</h3>
+				<h3 class="header-3">Kolejne artykuły, żeby wydłużyć stronę</h3>
 				<p>
 					Donec tempus iaculis bibendum. Nulla id sapien metus. Cras consequat, purus quis luctus aliquet,
 					dolor augue
@@ -90,7 +91,7 @@
 				</p>
 			</article>
 			<article>
-				<h3>Kolejne artykuły, żeby wydłużyć stronę</h3>
+				<h3 class="header-3">Kolejne artykuły, żeby wydłużyć stronę</h3>
 				<p>
 					Donec tempus iaculis bibendum. Nulla id sapien metus. Cras consequat, purus quis luctus aliquet,
 					dolor augue
@@ -102,7 +103,7 @@
 				</p>
 			</article>
 			<article>
-				<h3>Kolejne artykuły, żeby wydłużyć stronę</h3>
+				<h3 class="header-3">Kolejne artykuły, żeby wydłużyć stronę</h3>
 				<p>
 					Donec tempus iaculis bibendum. Nulla id sapien metus. Cras consequat, purus quis luctus aliquet,
 					dolor augue
@@ -114,7 +115,7 @@
 				</p>
 			</article>
 			<section>
-				<h2>Tutaj wrzucam zmiany w ramach testów GitHub</h2>
+				<h2 class="header-2">Tutaj wrzucam zmiany w ramach testów GitHub</h2>
 				<p>
 					Ta linijka wyląduje na GitHub.com
 				</p>
@@ -124,6 +125,9 @@
 	<footer>
 		<p>Tutaj napisałem stopkę mojego dokumentu <a href="#top">Wróć na górę</a></p>
 	</footer>
+	<script>
+		console.log('Witaj internauto! ;) To jest strona główna')
+	</script>
 </body>
 
 </html>

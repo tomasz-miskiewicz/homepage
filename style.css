@@ -1,15 +1,19 @@
 body {
-    background-color: #c2f2da;
+    background-color: #faf7f7;
     padding: 5% 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h2 {
+.header-2 {
     color: #1460AA;
     font-weight: 700;
 }
 
-h3 {
+.header-3 {
     color: #9a0e28;
     font-weight: 500;
+}
+
+.main-nav a {
+    color: rgb(23, 116, 26);
 }

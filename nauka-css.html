@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info o CSSL</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="index.html">Strona główna</a>
+            <a href="nauka-html.html">Znaczniki HTML</a>
+            <a href="nauka-css.html">Nauka CSS</a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <header id="top">
+            <h1>Na tej stronie cenne info w zakresie CSS - notatki z kursu WTF</h1>
+        </header>
+        <section>
+            <article>
+                <h2 class="header-2">Specyficzność w CSS</h2>
+                <p>
+                    W CSS obowiązuje określona hierarchia reguł stylowania. Ważność jak poniżej (malejąco):
+                <ol>
+                    <li>!important</li>
+                    <li>style="" (inline style - wpisany w znaczniku html)</li>
+                    <li>#name (selektor po id elementu)</li>
+                    <li>.name (selektor po klasei elementu)</li>
+                    <li>element (selektor po typie elementu)</li>
+                </ol>
+                Przy czym, w przypadku złożonych selektorów obowiązuje 1/ zasada jak w tabelach medalowych (patrz
+                materiały kursu). 2/ w przypadku równorzędnych - która reguła znajduje się "bliżej" stylowanego elementu
+                (bliższa jest zawsze reguła bliższa dołowi pliku css albo ta, która jest w samym pliku html)
+                </p>
+            </article>
+        </section>
+        <footer>
+            <p>Tutaj napisałem stopkę mojego dokumentu <a href="#top">Wróć na górę</a></p>
+        </footer>
+    </main>
+    <script>
+        console.log('Witaj internauto! ;) To jest strona dot. CSS')
+    </script>
+</body>
+
+</html>

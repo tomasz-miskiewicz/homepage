@@ -10,21 +10,32 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="main-nav">
             <a href="index.html">Strona główna</a>
             <a href="nauka-html.html">Znaczniki HTML</a>
+            <a href="nauka-css.html">Nauka CSS</a>
         </nav>
     </header>
-    <main>
+    <main class="main-content">
         <header id="top">
             <h1>Poniżej lista ciekawych znaczników html - notatki z kursu WTF</h1>
         </header>
         <section>
             <article>
-                <h2>&lt;main&gt;</h2>
+                <h2 class="header-2">&lt;main&gt;</h2>
                 <p>
                     Wskazuje na zasadniczą część dokumentu - tam gdzie jest treść do przekazania czytelnikowi. Tutaj
                     umieszczone to, co unikalne w ramach całej witryny.
+                </p>
+            </article>
+            <article>
+                <h2 class="header-2">&lt;link&gt;</h2>
+                <p>
+                    Do dodania odnośnika do innego pliku, z którego zawartości będziemy w danym dokumencie korzystać.
+                    Chwilowo (2023-07-18) jedyne poznane zastosowanie to podlinkowanie arkusza styli.<br/>
+                    Link do css powinien wyglądać tak:
+                    &lt;link href="style.css" rel="stylesheet" type="text/css"&gt;,<br>
+                    gdzie style.css to nazwa pliku
                 </p>
             </article>
         </section>
@@ -32,6 +43,9 @@
             <p>Tutaj napisałem stopkę mojego dokumentu <a href="#top">Wróć na górę</a></p>
         </footer>
     </main>
+    <script>
+		console.log('Witaj internauto! ;) To jest strona dot. HTML')
+	</script>
 </body>
 
 </html>
