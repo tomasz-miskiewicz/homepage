@@ -88,27 +88,39 @@
                     <li>absolute - element z tą własnością można dowolnie umiejscowić <strong>względem elementu rodzica
                             o
                             position: relative. </strong>Element z takim position można umiejscowić za pomocą własności:
-                        top, right, bottom, left (podaje się je osobno w definicji stylu; nie w "position") -> wskazują na pozycję względem brzegu elementu rodzica (z
+                        top, right, bottom, left (podaje się je osobno w definicji stylu; nie w "position") -> wskazują
+                        na pozycję względem brzegu elementu rodzica (z
                         uwzględnieniem jego paddingu)</li>
+                    <li>fixed - własności położenia określają wtedy położenie względem viewport, niezależnie od
+                        elementów nadrzędnych</li>
+                    <li>sticky - (uwaga: rodzic nie może mieć własności 'overflow') przykleja się do viewportu w ramach
+                        elementu-rodzica w odległości określonej własnością 'top' od góry kontenera (przykład przypadku
+                        użycia: nagłówek sekcji; nagłówek tabeli)</li>
                 </ol>
                 </p>
             </article>
             <article>
                 <h2 class="topic-header">z-index</h2>
                 <p>
-                <ol>
-                    <li></li>
-                    <li></li>
-                </ol>
+                    steruje kolejnością warstw (oś "z" generowanego obrazu), im większa wartość tym bliżej wierchu
+                    warstwa elementu; można używać wartości ujemnych -> wtedy element chowa się za inne elementy bliżej
+                    wierzchu
                 </p>
             </article>
             <article>
-                <h2 class="topic-header">tbd</h2>
+                <h2 class="topic-header">float (left, right)</h2>
                 <p>
-                <ol>
-                    <li></li>
-                    <li></li>
-                </ol>
+                    używać do umieszczania obrazków (lub innych elementów) w tekście tak, żeby tekst "oblewał dookoła" dany element. 
+                    Left - dany element równany do lewej; right - do prawej
+                    <br>nie używać do budowania layoutu 
+                </p>
+            </article>            <article>
+                <h2 class="topic-header">clear</h2>
+                <p>
+                    <ol>
+                        <li>both - umieszcza tekst danego elementu poniżej elementów floatujących
+                        </li>
+                    </ol>                   
                 </p>
             </article>
         </section>
