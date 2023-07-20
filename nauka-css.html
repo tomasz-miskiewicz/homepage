@@ -110,20 +110,40 @@
             <article>
                 <h2 class="topic-header">float (left, right)</h2>
                 <p>
-                    używać do umieszczania obrazków (lub innych elementów) w tekście tak, żeby tekst "oblewał dookoła" dany element. 
+                    używać do umieszczania obrazków (lub innych elementów) w tekście tak, żeby tekst "oblewał dookoła"
+                    dany element.
                     Left - dany element równany do lewej; right - do prawej
-                    <br>nie używać do budowania layoutu 
+                    <br>nie używać do budowania layoutu
                 </p>
-            </article>            <article>
+            </article>
+            <article>
                 <h2 class="topic-header">clear</h2>
                 <p>
-                    <ol>
-                        <li>both - umieszcza tekst danego elementu poniżej elementów floatujących
-                        </li>
-                    </ol>                   
+                <ol>
+                    <li>both - umieszcza tekst danego elementu poniżej elementów floatujących
+                    </li>
+                </ol>
                 </p>
             </article>
         </section>
+        <article>
+            <h2 class="topic-header">Normalizacja</h2>
+            <p>
+                Dołączenie do podlinkowanych plików css pliku normalize.css przygotowanego przez kogoś i wystawianego na
+                GitHub <a href="https://necolas.github.io/normalize.css/" target="_blank">tutaj</a>.
+                Celem tego pliku jest usunięcie na start wszystkich styli nadanych przez przeglądarkę (różne
+                przeglądarki). Plik css dołączamy w całości i nie modyfikujemy go.
+                <br>Dodatkowo warto do własnego stylesheet css dodać dwie reguły z zakresu "reset":
+            <pre class="code">
+    html {
+        box-sizing: border-box;
+        }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }</pre>
+            </p>
+        </article>
         <footer>
             <p><br>
                 <hr>Tutaj napisałem stopkę mojego dokumentu <a href="#top">Wróć na górę</a>

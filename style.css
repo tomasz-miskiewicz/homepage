@@ -23,3 +23,11 @@ body {
 .main-nav a {
     color: rgb(23, 116, 26);
 }
+
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    padding: 10px 0px;
+}
