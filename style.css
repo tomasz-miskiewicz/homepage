@@ -1,7 +1,21 @@
+/* normalizacja - BEGIN */
+html {
+    box-sizing: border-box;
+    }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* normalizacja - END */
+
 body {
     background-color: #faf7f7;
-    padding: 5% 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+main, .main-nav, footer {
+    padding: 0 5vw;
 }
 
 .topic-header {
@@ -22,6 +36,12 @@ body {
 
 .main-nav a {
     color: rgb(23, 116, 26);
+}
+
+.main-nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: bisque;
 }
 
 .code {

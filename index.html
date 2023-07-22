@@ -6,18 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>TMIS Ćwiczenia WTF 2023</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="normalize.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 	<header>
-		<nav class="main-nav">
+		<nav class="main-nav" id="top">
 			<a href="index.html">Strona główna</a>
 			<a href="nauka-html.html">Znaczniki HTML</a>
 			<a href="nauka-css.html">Nauka CSS</a>
 		</nav>
 	</header>
 	<main class="main-content">
-		<header id="top">
+		<header>
 			<h1>Praca domowa z M02</h1>
 		</header>
 		<section>
@@ -55,7 +56,7 @@
 			</article>
 			<article>
 				<h3 class="header-2">Czy to nie powinno być w strukturze jako dziecko "section" z h2?</h3>
-				<img src="Lock_icon.png" alt="kłódka" height="80px">
+				<img src="Lock_icon.png" alt="kłódka" height="80">
 				<p>
 					Donec tempus iaculis bibendum. Nulla id sapien metus. Cras consequat, purus quis luctus aliquet,
 					dolor augue
@@ -123,7 +124,9 @@
 		</section>
 	</main>
 	<footer>
-		<p><br><hr>Tutaj napisałem stopkę mojego dokumentu <a href="#top">Wróć na górę</a></p>
+		<br>
+		<hr>
+		<p>Tutaj napisałem stopkę mojego dokumentu <a href="#top">Wróć na górę</a></p>
 	</footer>
 	<script>
 		console.log('Witaj internauto! ;) To jest strona główna')
