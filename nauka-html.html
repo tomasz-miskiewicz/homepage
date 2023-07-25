@@ -5,32 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Znaczniki HTML</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="normalize.css" rel="stylesheet" type="text/css">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <link href="/normalize.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <header>
-        <nav class="main-nav">
-            <a href="index.html">Strona główna</a>
-            <a href="nauka-html.html">Znaczniki HTML</a>
-            <a href="nauka-css.html">Nauka CSS</a>
+        <nav class="navigation main-nav">
+            <a class="navigation__link" href="index.html">Strona główna</a>
+            <a class="navigation__link" href="nauka-html.html">Znaczniki HTML</a>
+            <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
         </nav>
     </header>
     <main class="main-content">
         <header id="top">
-            <h1>Poniżej lista ciekawych znaczników html - notatki z kursu WTF</h1>
+            <h1 class="page-title">Poniżej lista ciekawych znaczników html - notatki z kursu WTF</h1>
         </header>
-        <section>
-            <article>
-                <h2 class="header-2">&lt;main&gt;</h2>
+        <section class="section">
+            <article class="article">
+                <h2 class="article__title">&lt;main&gt;</h2>
                 <p>
                     Wskazuje na zasadniczą część dokumentu - tam gdzie jest treść do przekazania czytelnikowi. Tutaj
                     umieszczone to, co unikalne w ramach całej witryny.
                 </p>
             </article>
-            <article>
-                <h2 class="header-2">&lt;link&gt;</h2>
+            <article class="article">
+                <h2 class="article__title">&lt;link&gt;</h2>
                 <p>
                     Do dodania odnośnika do innego pliku, z którego zawartości będziemy w danym dokumencie korzystać.
                     Chwilowo (2023-07-18) jedyne poznane zastosowanie to podlinkowanie arkusza styli.<br />
@@ -41,7 +41,7 @@
             </article>
         </section>
     </main>
-    <footer>
+    <footer class="page-footer">
         <p><br>
             <hr>Tutaj napisałem stopkę mojego dokumentu <a href="#top">Wróć na górę</a>
         </p>

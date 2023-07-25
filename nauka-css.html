@@ -5,32 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info o CSSL</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="normalize.css" rel="stylesheet" type="text/css">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <link href="/normalize.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <header>
-        <nav class="main-nav">
-            <a href="index.html">Strona główna</a>
-            <a href="nauka-html.html">Znaczniki HTML</a>
-            <a href="nauka-css.html">Nauka CSS</a>
+        <nav class="navigation main-nav">
+            <a class="navigation__link" href="index.html">Strona główna</a>
+            <a class="navigation__link" href="nauka-html.html">Znaczniki HTML</a>
+            <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
         </nav>
     </header>
     <main class="main-content">
         <header id="top">
-            <h1>Na tej stronie cenne info w zakresie CSS - notatki z kursu WTF</h1>
+            <h1 class="page-title">Na tej stronie cenne info w zakresie CSS - notatki z kursu WTF</h1>
         </header>
-        <section>
-            <article>
-                <h2 class="topic-header">Specyficzność w CSS</h2>
+        <section class="section">
+            <article class="article">
+                <h2 class="article__title">Specyficzność w CSS</h2>
                 <p>
                     W CSS obowiązuje określona hierarchia reguł stylowania. Ważność jak poniżej (malejąco):
                 <ol>
                     <li>!important</li>
                     <li>style="" (inline style - wpisany w znaczniku html)</li>
                     <li>#name (selektor po id elementu)</li>
-                    <li>.name (selektor po klasei elementu)</li>
+                    <li>.name (selektor po klasie elementu)</li>
                     <li>element (selektor po typie elementu)</li>
                 </ol>
                 Przy czym, w przypadku złożonych selektorów obowiązuje 1/ zasada jak w tabelach medalowych (patrz
@@ -38,14 +38,14 @@
                 (bliższa jest zawsze reguła bliższa dołowi pliku css albo ta, która jest w samym pliku html)
                 </p>
             </article>
-            <article>
-                <h2 class="topic-header">display</h2>
+            <article class="article">
+                <h2 class="article__title">display</h2>
                 <p>
                     możliwe wartości: block, inline, inline-block
                 </p>
             </article>
-            <article>
-                <h2 class="topic-header">overflow - jak wyświetlać to, co nie mieści się w kontenerze</h2>
+            <article class="article">
+                <h2 class="article__title">overflow - jak wyświetlać to, co nie mieści się w kontenerze</h2>
                 <p>
                 <ol>
                     <li>hidden - ukrywa</li>
@@ -53,8 +53,8 @@
                 </ol>
                 </p>
             </article>
-            <article>
-                <h2 class="topic-header">Jednostki w css</h2>
+            <article class="article">
+                <h2 class="article__title">Jednostki w css</h2>
                 <p>
                 <ol>
                     <li>px - piksele</li>
@@ -64,8 +64,8 @@
                 </ol>
                 </p>
             </article>
-            <article>
-                <h2 class="topic-header">box-sizing - jak przeglądarka ma liczyć podane wymiary w odniesieniu do
+            <article class="article">
+                <h2 class="article__title">box-sizing - jak przeglądarka ma liczyć podane wymiary w odniesieniu do
                     padding, border</h2>
                 <p>
                 <ol>
@@ -79,8 +79,8 @@
                 </ol>
                 </p>
             </article>
-            <article>
-                <h2 class="topic-header">position</h2>
+            <article class="article">
+                <h2 class="article__title">position</h2>
                 <p>
                 <ol>
                     <li>static - domyślne w przeglądarce; przeglądarka wylicza pozycje na podstawie display, borderów
@@ -100,16 +100,16 @@
                 </ol>
                 </p>
             </article>
-            <article>
-                <h2 class="topic-header">z-index</h2>
+            <article class="article">
+                <h2 class="article__title">z-index</h2>
                 <p>
                     steruje kolejnością warstw (oś "z" generowanego obrazu), im większa wartość tym bliżej wierchu
                     warstwa elementu; można używać wartości ujemnych -> wtedy element chowa się za inne elementy bliżej
                     wierzchu
                 </p>
             </article>
-            <article>
-                <h2 class="topic-header">float (left, right)</h2>
+            <article class="article">
+                <h2 class="article__title">float (left, right)</h2>
                 <p>
                     używać do umieszczania obrazków (lub innych elementów) w tekście tak, żeby tekst "oblewał dookoła"
                     dany element.
@@ -117,8 +117,8 @@
                     <br>nie używać do budowania layoutu
                 </p>
             </article>
-            <article>
-                <h2 class="topic-header">clear</h2>
+            <article class="article">
+                <h2 class="article__title">clear</h2>
                 <p>
                 <ol>
                     <li>both - umieszcza tekst danego elementu poniżej elementów floatujących
@@ -126,9 +126,8 @@
                 </ol>
                 </p>
             </article>
-
-            <article>
-                <h2 class="topic-header">Normalizacja</h2>
+            <article class="article">
+                <h2 class="article__title">Normalizacja</h2>
                 <p>
                     Dołączenie do podlinkowanych plików css pliku normalize.css przygotowanego przez kogoś i
                     wystawianego na
@@ -146,8 +145,8 @@
     }</pre>
                 </p>
             </article>
-            <article>
-                <h2 class="topic-header">BEM</h2>
+            <article class="article">
+                <h2 class="article__title article__title--special">BEM</h2>
                 <p>BEM - Block - Element - Modifier
                 <ol>
                     <li>Sposób zapisu nazwy klasy: block__element--modifier
