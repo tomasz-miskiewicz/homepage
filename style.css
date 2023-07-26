@@ -13,14 +13,60 @@ html {
 
 /* normalizacja - END */
 
+.article {
+    background-color: #ddece7;
+    padding: 1% 6%;
+    margin: 20px;
+    display: block;
+    max-width: 75vw;
+    min-width: 200px;
+    min-height: 150px;
+}
+
+.article__title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #1460AA;
+}
+
+.article__title--special {
+    color: #c6256d;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 body {
     background-color: #faf7f7;
 }
 
-main,
-.main-nav,
-footer {
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    padding: 10px 0px;
+}
+
+main, footer {
     padding: 0 5vw;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.main-nav {
+    padding: 10px 5vw;
+}
+
+.navigation__link {
+    color: rgb(152, 29, 201);
+}
+
+.navigation {
+    background-color: bisque;
+}
+
+.page-header {
+    position: sticky;
+    top: 0;
 }
 
 .page-title {
@@ -40,46 +86,4 @@ footer {
     font-size: 1.4rem;
     font-weight: 700;
     color: #0a8f38;
-}
-
-.article {
-    background-color: #ddece7;
-    padding: 1% 2%;
-    margin: 20px auto;
-    display: block;
-    max-width: 75vw;
-    min-width: 200px;
-    min-height: 150px;
-}
-
-.article__title {
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: #1460AA;
-}
-
-.article__title--special {
-    color: #c6256d;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.navigation__link {
-    color: rgb(152, 29, 201);
-}
-
-.navigation {
-    background-color: bisque;
-}
-
-.main-nav {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.code {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
-    color: white;
-    background-color: black;
-    padding: 10px 0px;
 }
