@@ -1,7 +1,7 @@
 console.log('Hej! to jest tekst ze skryptu js w main.js');
 
-const headerToChange = document.querySelector('.section__title--js');
+const myName = 'Tomek';
+const mySurname = 'Miśkiewicz';
+let favouriteColour = 'niebieski';
 
-console.log(headerToChange.innerHTML);
-
-headerToChange.innerHTML = 'Treść wstawiona skryptem JS do elementu HTML';
+console.log (`Hej! Tu ${myName} ${mySurname}, mój ulubiony kolor dziś to: ${favouriteColour}`);
