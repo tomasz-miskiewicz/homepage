@@ -2,140 +2,140 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info o CSSL</title>
-    <link href="/style.css" rel="stylesheet" type="text/css">
-    <link href="/normalize.css" rel="stylesheet" type="text/css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Info o CSSL</title>
+   <link href="/style.css" rel="stylesheet" type="text/css">
+   <link href="/normalize.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <header class="page-header">
-        <nav class="navigation main-nav">
-            <a class="navigation__link" href="index.html">Strona główna</a>
-            <a class="navigation__link" href="nauka-html.html">Znaczniki HTML</a>
-            <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
-        </nav>
-    </header>
-    <main class="main-content" id="top">
-        <header>
-            <h1 class="page-title">Na tej stronie cenne info w zakresie CSS - notatki z kursu WTF</h1>
-        </header>
-        <section class="section">
-            <article class="article">
-                <h2 class="article__title">Specyficzność w CSS</h2>
-                <p>
-                    W CSS obowiązuje określona hierarchia reguł stylowania. Ważność jak poniżej (malejąco):
-                <ol>
-                    <li>!important</li>
-                    <li>style="" (inline style - wpisany w znaczniku html)</li>
-                    <li>#name (selektor po id elementu)</li>
-                    <li>.name (selektor po klasie elementu)</li>
-                    <li>element (selektor po typie elementu)</li>
-                </ol>
-                Przy czym, w przypadku złożonych selektorów obowiązuje 1/ zasada jak w tabelach medalowych (patrz
-                materiały kursu). 2/ w przypadku równorzędnych - która reguła znajduje się "bliżej" stylowanego elementu
-                (bliższa jest zawsze reguła bliższa dołowi pliku css albo ta, która jest w samym pliku html)
-                </p>
-            </article>
-            <article class="article">
-                <h2 class="article__title">display</h2>
-                <p>
-                    możliwe wartości: block, inline, inline-block
-                </p>
-            </article>
-            <article class="article">
-                <h2 class="article__title">overflow - jak wyświetlać to, co nie mieści się w kontenerze</h2>
-                <p>
-                <ol>
-                    <li>hidden - ukrywa</li>
-                    <li>visible - pokazuje (nawet jeśli nałoży się na coś innego)</li>
-                </ol>
-                </p>
-            </article>
-            <article class="article">
-                <h2 class="article__title">Jednostki w css</h2>
-                <p>
-                <ol>
-                    <li>px - piksele</li>
-                    <li>% - procent (wymiaru kontenera)</li>
-                    <li>vw - viewport width (procent szerokości okna przeglądarki)</li>
-                    <li>vh - viewport height (procent wysokości okna przeglądarki)</li>
-                </ol>
-                </p>
-            </article>
-            <article class="article">
-                <h2 class="article__title">box-sizing - jak przeglądarka ma liczyć podane wymiary w odniesieniu do
-                    padding, border</h2>
-                <p>
-                <ol>
-                    <li>content-box - domyślne zachowanie przeglądarki; podane własności stosuje się do samego contentu,
-                        padding i border
-                        doliczane są "na zewnątrz"</li>
-                    <li>border-box - podane własności stosuje się contentu+padding+border, czyli np. podany max-width
-                        będzie
-                        odnosił się sumy szerokości tych 3 składowych <strong>Obecnie stosuje się jako standard</strong>
-                    </li>
-                </ol>
-                </p>
-            </article>
-            <article class="article">
-                <h2 class="article__title">position</h2>
-                <p>
-                <ol>
-                    <li>static - domyślne w przeglądarce; przeglądarka wylicza pozycje na podstawie display, borderów
-                    </li>
-                    <li>relative - stwarza "przestrzeń" dla umiejscawiania elementów z position: absolute</li>
-                    <li>absolute - element z tą własnością można dowolnie umiejscowić <strong>względem elementu rodzica
-                            o
-                            position: relative. </strong>Element z takim position można umiejscowić za pomocą własności:
-                        top, right, bottom, left (podaje się je osobno w definicji stylu; nie w "position") -> wskazują
-                        na pozycję względem brzegu elementu rodzica (z
-                        uwzględnieniem jego paddingu)</li>
-                    <li>fixed - własności położenia określają wtedy położenie względem viewport, niezależnie od
-                        elementów nadrzędnych</li>
-                    <li>sticky - (uwaga: rodzic nie może mieć własności 'overflow') przykleja się do viewportu w ramach
-                        elementu-rodzica w odległości określonej własnością 'top' od góry kontenera (przykład przypadku
-                        użycia: nagłówek sekcji; nagłówek tabeli)</li>
-                </ol>
-                </p>
-            </article>
-            <article class="article">
-                <h2 class="article__title">z-index</h2>
-                <p>
-                    steruje kolejnością warstw (oś "z" generowanego obrazu), im większa wartość tym bliżej wierchu
-                    warstwa elementu; można używać wartości ujemnych -> wtedy element chowa się za inne elementy bliżej
-                    wierzchu
-                </p>
-            </article>
-            <article class="article">
-                <h2 class="article__title">float (left, right)</h2>
-                <p>
-                    używać do umieszczania obrazków (lub innych elementów) w tekście tak, żeby tekst "oblewał dookoła"
-                    dany element.
-                    Left - dany element równany do lewej; right - do prawej
-                    <br>nie używać do budowania layoutu
-                </p>
-            </article>
-            <article class="article">
-                <h2 class="article__title">clear</h2>
-                <p>
-                <ol>
-                    <li>both - umieszcza tekst danego elementu poniżej elementów floatujących
-                    </li>
-                </ol>
-                </p>
-            </article>
-            <article class="article">
-                <h2 class="article__title">Normalizacja</h2>
-                <p>
-                    Dołączenie do podlinkowanych plików css pliku normalize.css przygotowanego przez kogoś i
-                    wystawianego na
-                    GitHub <a href="https://necolas.github.io/normalize.css/" target="_blank">tutaj</a>.
-                    Celem tego pliku jest usunięcie na start wszystkich styli nadanych przez przeglądarkę (różne
-                    przeglądarki). Plik css dołączamy w całości i nie modyfikujemy go.
-                    <br>Dodatkowo warto do własnego stylesheet css dodać dwie reguły z zakresu "reset":
-                <pre class="code">
+   <header class="page-header">
+      <nav class="navigation main-nav">
+         <a class="navigation__link" href="index.html">Strona główna</a>
+         <a class="navigation__link" href="nauka-html.html">Znaczniki HTML</a>
+         <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
+      </nav>
+   </header>
+   <main class="main-content" id="top">
+      <header>
+         <h1 class="page-title">Na tej stronie cenne info w zakresie CSS - notatki z kursu WTF</h1>
+      </header>
+      <section class="section">
+         <article class="article">
+            <h2 class="article__title">Specyficzność w CSS</h2>
+            <p>
+               W CSS obowiązuje określona hierarchia reguł stylowania. Ważność jak poniżej (malejąco):
+            <ol>
+               <li>!important</li>
+               <li>style="" (inline style - wpisany w znaczniku html)</li>
+               <li>#name (selektor po id elementu)</li>
+               <li>.name (selektor po klasie elementu)</li>
+               <li>element (selektor po typie elementu)</li>
+            </ol>
+            Przy czym, w przypadku złożonych selektorów obowiązuje 1/ zasada jak w tabelach medalowych (patrz
+            materiały kursu). 2/ w przypadku równorzędnych - która reguła znajduje się "bliżej" stylowanego elementu
+            (bliższa jest zawsze reguła bliższa dołowi pliku css albo ta, która jest w samym pliku html)
+            </p>
+         </article>
+         <article class="article">
+            <h2 class="article__title">display</h2>
+            <p>
+               możliwe wartości: block, inline, inline-block
+            </p>
+         </article>
+         <article class="article">
+            <h2 class="article__title">overflow - jak wyświetlać to, co nie mieści się w kontenerze</h2>
+            <p>
+            <ol>
+               <li>hidden - ukrywa</li>
+               <li>visible - pokazuje (nawet jeśli nałoży się na coś innego)</li>
+            </ol>
+            </p>
+         </article>
+         <article class="article">
+            <h2 class="article__title">Jednostki w css</h2>
+            <p>
+            <ol>
+               <li>px - piksele</li>
+               <li>% - procent (wymiaru kontenera)</li>
+               <li>vw - viewport width (procent szerokości okna przeglądarki)</li>
+               <li>vh - viewport height (procent wysokości okna przeglądarki)</li>
+            </ol>
+            </p>
+         </article>
+         <article class="article">
+            <h2 class="article__title">box-sizing - jak przeglądarka ma liczyć podane wymiary w odniesieniu do
+               padding, border</h2>
+            <p>
+            <ol>
+               <li>content-box - domyślne zachowanie przeglądarki; podane własności stosuje się do samego contentu,
+                  padding i border
+                  doliczane są "na zewnątrz"</li>
+               <li>border-box - podane własności stosuje się contentu+padding+border, czyli np. podany max-width
+                  będzie
+                  odnosił się sumy szerokości tych 3 składowych <strong>Obecnie stosuje się jako standard</strong>
+               </li>
+            </ol>
+            </p>
+         </article>
+         <article class="article">
+            <h2 class="article__title">position</h2>
+            <p>
+            <ol>
+               <li>static - domyślne w przeglądarce; przeglądarka wylicza pozycje na podstawie display, borderów
+               </li>
+               <li>relative - stwarza "przestrzeń" dla umiejscawiania elementów z position: absolute</li>
+               <li>absolute - element z tą własnością można dowolnie umiejscowić <strong>względem elementu rodzica
+                     o
+                     position: relative. </strong>Element z takim position można umiejscowić za pomocą własności:
+                  top, right, bottom, left (podaje się je osobno w definicji stylu; nie w "position") -> wskazują
+                  na pozycję względem brzegu elementu rodzica (z
+                  uwzględnieniem jego paddingu)</li>
+               <li>fixed - własności położenia określają wtedy położenie względem viewport, niezależnie od
+                  elementów nadrzędnych</li>
+               <li>sticky - (uwaga: rodzic nie może mieć własności 'overflow') przykleja się do viewportu w ramach
+                  elementu-rodzica w odległości określonej własnością 'top' od góry kontenera (przykład przypadku
+                  użycia: nagłówek sekcji; nagłówek tabeli)</li>
+            </ol>
+            </p>
+         </article>
+         <article class="article">
+            <h2 class="article__title">z-index</h2>
+            <p>
+               steruje kolejnością warstw (oś "z" generowanego obrazu), im większa wartość tym bliżej wierchu
+               warstwa elementu; można używać wartości ujemnych -> wtedy element chowa się za inne elementy bliżej
+               wierzchu
+            </p>
+         </article>
+         <article class="article">
+            <h2 class="article__title">float (left, right)</h2>
+            <p>
+               używać do umieszczania obrazków (lub innych elementów) w tekście tak, żeby tekst "oblewał dookoła"
+               dany element.
+               Left - dany element równany do lewej; right - do prawej
+               <br>nie używać do budowania layoutu
+            </p>
+         </article>
+         <article class="article">
+            <h2 class="article__title">clear</h2>
+            <p>
+            <ol>
+               <li>both - umieszcza tekst danego elementu poniżej elementów floatujących
+               </li>
+            </ol>
+            </p>
+         </article>
+         <article class="article">
+            <h2 class="article__title">Normalizacja</h2>
+            <p>
+               Dołączenie do podlinkowanych plików css pliku normalize.css przygotowanego przez kogoś i
+               wystawianego na
+               GitHub <a href="https://necolas.github.io/normalize.css/" target="_blank">tutaj</a>.
+               Celem tego pliku jest usunięcie na start wszystkich styli nadanych przez przeglądarkę (różne
+               przeglądarki). Plik css dołączamy w całości i nie modyfikujemy go.
+               <br>Dodatkowo warto do własnego stylesheet css dodać dwie reguły z zakresu "reset":
+            <pre class="code">
     html {
         box-sizing: border-box;
         }
@@ -143,29 +143,29 @@
     *, *:before, *:after {
         box-sizing: inherit;
     }</pre>
-                </p>
-            </article>
-            <article class="article">
-                <h2 class="article__title article__title--special">BEM</h2>
-                <p>BEM - Block - Element - Modifier
-                <ol>
-                    <li>Sposób zapisu nazwy klasy: block__element--modifier
-                    </li>
-                </ol>
-                </p>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <p><br>
-            <hr>Tutaj napisałem stopkę mojego dokumentu</a>
-        </p>
-    </footer>
-    <div class="go-to-top"><a class="link" href="#top">Wróć na górę</a></div>
-    <script>
-        console.log('Witaj internauto! ;) To jest strona dot. CSS')
-    </script>
-    <script defer src="/main.js"></script>
+            </p>
+         </article>
+         <article class="article">
+            <h2 class="article__title article__title--special">BEM</h2>
+            <p>BEM - Block - Element - Modifier
+            <ol>
+               <li>Sposób zapisu nazwy klasy: block__element--modifier
+               </li>
+            </ol>
+            </p>
+         </article>
+      </section>
+   </main>
+   <footer>
+      <p><br>
+         <hr>Tutaj napisałem stopkę mojego dokumentu</a>
+      </p>
+   </footer>
+   <div class="go-to-top"><a class="link" href="#top">Wróć na górę</a></div>
+   <script>
+      console.log('Witaj internauto! ;) To jest strona dot. CSS')
+   </script>
+   <script defer src="/main.js"></script>
 </body>
 
 </html>

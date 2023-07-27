@@ -102,3 +102,18 @@ main, footer {
     font-weight: 700;
     color: #0a8f38;
 }
+
+.table {
+    width: 100%;
+    text-align: left;
+}
+
+.table__head * {
+    font-weight: 700;
+    padding: 1.2rem 0.5rem;
+}
+
+.table__caption {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}

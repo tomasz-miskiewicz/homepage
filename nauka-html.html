@@ -2,57 +2,108 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Znaczniki HTML</title>
-    <link href="/style.css" rel="stylesheet" type="text/css">
-    <link href="/normalize.css" rel="stylesheet" type="text/css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Znaczniki HTML</title>
+   <link href="/style.css" rel="stylesheet" type="text/css">
+   <link href="/normalize.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <header class="page-header">
-        <nav class="navigation main-nav">
-            <a class="navigation__link" href="index.html">Strona główna</a>
-            <a class="navigation__link" href="nauka-html.html">Znaczniki HTML</a>
-            <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
-        </nav>
-    </header>
-    <main class="main-content" id="top">
-        <header>
-            <h1 class="page-title">Poniżej lista ciekawych znaczników html - notatki z kursu WTF</h1>
-        </header>
-        <section class="section">
-            <h2 class="section__title section__title--js"></h2>
-            <article class="article">
-                <h2 class="article__title">&lt;main&gt;</h2>
-                <p>
-                    Wskazuje na zasadniczą część dokumentu - tam gdzie jest treść do przekazania czytelnikowi. Tutaj
-                    umieszczone to, co unikalne w ramach całej witryny.
-                </p>
-            </article>
-            <article class="article">
-                <h2 class="article__title">&lt;link&gt;</h2>
-                <p>
-                    Do dodania odnośnika do innego pliku, z którego zawartości będziemy w danym dokumencie korzystać.
-                    Chwilowo (2023-07-18) jedyne poznane zastosowanie to podlinkowanie arkusza styli.<br />
-                    Link do css powinien wyglądać tak:
-                    &lt;link href="style.css" rel="stylesheet" type="text/css"&gt;,<br>
-                    gdzie style.css to nazwa pliku
-                </p>
-            </article>
-        </section>
-    </main>
-    <footer class="page-footer">
-        <p><br>
-            <hr>Tutaj napisałem stopkę mojego dokumentu</a>
-        </p>
-    </footer>
-    <div class="go-to-top"><a class="link" href="#top">Wróć na górę</a></div>
-    <script>
-        console.log('Witaj internauto! ;) To jest strona dot. HTML')
-    </script>
-    <script defer src="/main.js"></script>
-    <script defer src="/nauka-html.js"></script>
+   <header class="page-header">
+      <nav class="navigation main-nav">
+         <a class="navigation__link" href="index.html">Strona główna</a>
+         <a class="navigation__link" href="nauka-html.html">Znaczniki HTML</a>
+         <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
+      </nav>
+   </header>
+   <main class="main-content" id="top">
+      <header>
+         <h1 class="page-title">Poniżej lista ciekawych znaczników html - notatki z kursu WTF</h1>
+      </header>
+      <section class="section">
+         <h2 class="section__title section__title--js"></h2>
+         <article class="article">
+            <h2 class="article__title">&lt;main&gt;</h2>
+            <p>
+               Wskazuje na zasadniczą część dokumentu - tam gdzie jest treść do przekazania czytelnikowi. Tutaj
+               umieszczone to, co unikalne w ramach całej witryny.
+            </p>
+         </article>
+         <article class="article">
+            <h2 class="article__title">&lt;link&gt;</h2>
+            <p>
+               Do dodania odnośnika do innego pliku, z którego zawartości będziemy w danym dokumencie korzystać.
+               Chwilowo (2023-07-18) jedyne poznane zastosowanie to podlinkowanie arkusza styli.<br />
+               Link do css powinien wyglądać tak:
+               &lt;link href="style.css" rel="stylesheet" type="text/css"&gt;,<br>
+               gdzie style.css to nazwa pliku
+            </p>
+         </article>
+         <article class="article">
+            <h2 class="article__title">&lt;dl&gt;</h2>
+            <p>
+               Do robienia listy typu legenda - para: term (&lt;dt&gt;) i details (&lt;dd&gt;). Poniżej przykład
+               użycia
+            </p>
+            <h3>Wybrane serie lego:</h3>
+            <dl>
+               <dt>LEGO Technic</dt>
+               <dd>seria klocków Lego, pozwalająca na budowanie realistycznie funkcjonujących pojazdów. Oprócz
+                  klasycznych klocków, na wyposażeniu znajdują się ośki, patyczki, krzyżaki, koła, gąsienice oraz
+                  łączniki. Niektóre zestawy wyposażone są w elektronikę, za sprawą której można sterować
+                  modelami.</dd>
+               <dt>LEGO Mindstorms</dt>
+               <dd>seria produkowana przez Lego Group w latach 1998 - 2022, która łączy klocki Lego (głównie z
+                  serii Lego Technic) z czujnikami elektronicznymi, serwomechanizmami i komputerową jednostką
+                  centralną pozwalającą między innymi na konstruowanie robotów i układów automatyki oraz na ich
+                  odpowiednie oprogramowywanie. Istnieje pięć rodzajów zestawów Lego Mindstorms (RCX, NXT, NXT
+                  2.0, EV3, Robot Inventor).</dd>
+            </dl>
+         </article>
+         <article class="article">
+            <h2 class="article__title">&lt;table&gt;</h2>
+            <table class="table">
+               <caption class="table__caption">Ostatnio poznane znaczniki html z opisem</caption>
+               <thead class="table__head">
+                  <tr>
+                     <th>Znacznik</th>
+                     <th>Do czego, co znaczy</th>
+                     <th>Czy ciekawy</th>
+                  </tr>
+               </thead>
+               <tbody class="table__body">
+                  <tr>
+                     <td>&lt;dl&gt;</td>
+                     <td>Lista rzeczy z opisem</td>
+                     <td>✅</td>
+                  </tr>
+                  <tr>
+                     <td>&lt;dt&gt;</td>
+                     <td>zagadnienie</td>
+                     <td>❌</td>
+                  </tr>
+                  <tr>
+                     <td>&lt;dd&gt;</td>
+                     <td>Opis</td>
+                     <td>✅</td>
+                  </tr>
+               </tbody>
+            </table>
+         </article>
+      </section>
+   </main>
+   <footer class="page-footer">
+      <p><br>
+         <hr>Tutaj napisałem stopkę mojego dokumentu</a>
+      </p>
+   </footer>
+   <div class="go-to-top"><a class="link" href="#top">Wróć na górę</a></div>
+   <script>
+      console.log('Witaj internauto! ;) To jest strona dot. HTML')
+   </script>
+   <script defer src="/main.js"></script>
+   <script defer src="/nauka-html.js"></script>
 </body>
 
 </html>
